@@ -1,7 +1,8 @@
 /*
   Given a sorted array will possibly duplicate elements the task is to fing indexes of first and 
   last occurences of an element x in the given array
- */
+ */ 
+//by Recursion
 public class AmazonFirstAndLastOccurence { 
     public static int firstOccurence(int arr[],int idx,int key){
         if(arr[idx]==key){
@@ -29,4 +30,33 @@ public class AmazonFirstAndLastOccurence {
         System.out.println(lastOccurence(arr, 0, key));
         
     }
+} 
+
+// by iteration  
+public class AmazonFirstandLastOccur { 
+    public static void calc(int arr[],int key){
+        int c=-1;   
+        int ca=-1; 
+        int ck=0;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]==key){
+                if(ck==0){
+                    c=i; 
+                    ck++;
+                } 
+                ca=i;
+            }  
+           
+        } 
+       
+        System.out.println(c+" "+ca);
+    }
+    public static void main(String []args){
+        int arr[]={1,3,5,5,5,5,67,123,125}; 
+        int key=5; 
+        calc(arr,key);
+        
+    }
+    
 }
+
