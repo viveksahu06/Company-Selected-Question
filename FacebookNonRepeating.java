@@ -1,5 +1,5 @@
 public class FacebookNonRepeating { 
- /*  public static int nonRepeatingIndex(String s){
+   public static int nonRepeatingIndex(String s){
         if(s.length()==1) return 0;  
        
         for(int i=0;i<s.length();i++){
@@ -15,26 +15,10 @@ public class FacebookNonRepeating {
             if(b==false) return i;
         } 
         return -1;
-    }*/ 
+    } 
      public static void main(String []args){
-      //  String s="abacdcbd"; 
-         // System.out.println(nonRepeatingIndex(s));
-       //  public static void main(String args[]) {
-
-        int x = 10;
-
-        int y = 20;
-      
-        int z = 30;
-      
-        if (x+y%z > (x+(-y)*(-z))) {
-      
-        System.out.println(x + y + z);
-      
-        }
-      
+        String s="abacdcbd"; 
+          System.out.println(nonRepeatingIndex(s));
         
-            
-         //   }
      }
 }
